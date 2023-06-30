@@ -1,9 +1,11 @@
 <?php
     session_start();
 
+    // Check if user is logged in
     if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true)
     {
-        header("location:../Signup&Login/index.php");
+        header("location:../Signup&Login/index.php"); // Redirect to login page if not logged in
+
         exit;
     }
 
@@ -312,11 +314,13 @@
     
     <script>
 
+        // Initialize AOS library for animations
         AOS.init({
-            duration:800,
+            duration:800, // Set the duration of animations to 800 milliseconds
             offset:100,
         })
 
+        // Check if the window width is less than or equal to 450 pixels
         if (window.matchMedia('(max-width: 450px)').matches) {
             AOS.init({
                 duration: 800,

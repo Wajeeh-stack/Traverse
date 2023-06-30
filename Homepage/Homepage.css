@@ -1,3 +1,4 @@
+/* Importing Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 
 @font-face{
@@ -6,6 +7,8 @@
 	url('../References/fonts/beyond_the_mountains.ttf')  format('opentype');
 }
 
+
+/* Global Styles */
 *{
     font-family: 'poppins', sans-serif;
     margin: 0;
@@ -42,6 +45,7 @@ section {
     padding: 3rem 9%;
 }
 
+/* Heading Styles */
 .heading {
     text-align: center;
     margin-bottom: 2rem;
@@ -57,6 +61,7 @@ section {
     font-size: 4rem;
 }
 
+/* Button Styles */
 .btn {
     margin-top: 1rem;
     display: inline-block;
@@ -74,6 +79,7 @@ section {
     color: #f8f9fc;
 }
 
+/* Header Styles */
 .header {
    position: fixed;
    top: 0;
@@ -124,6 +130,7 @@ section {
     display: none;
 }
 
+/* Home Section Styles */
 .home {
     margin: auto;
     margin-top: 105px;
@@ -179,6 +186,7 @@ section {
     letter-spacing: 1px;
 }
 
+/* Book-form Section Styles */
 .book-form {
     width: 80%;
     margin: 1rem auto;
@@ -220,6 +228,7 @@ section {
     flex: 1 1 15rem;
 }
 
+/* About Section Styles */
 .about {
     display: flex;
     align-items: center;
@@ -260,6 +269,7 @@ section {
     line-height: 2;
 }
 
+/* Services Section Styles */
 .services .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(32rem, 1fr));
@@ -297,7 +307,7 @@ section {
     line-height: 2;
 }
 
-/* DESTINATION */
+/* Destination Section Styles */
 .destination .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(27rem,1fr));
@@ -353,7 +363,7 @@ section {
     padding-right: .5rem;
 }
 
-/* CART ICON*/
+/* Cart Icon Styles */
 header .shopping i {
     font-size: 4rem;
     color: #000;
@@ -374,7 +384,7 @@ header .shopping span {
     /* border: 1px solid red; */
 }
 
-/* CART SLIDER */
+/* Cart Slider Section Styles */
 .card{
     position: fixed;
     top:0;
@@ -499,6 +509,7 @@ header .shopping span {
     font-size: 1.4rem;
 }
 
+/* Gallery Section Styles */
 .gallery .box-container {
     columns: 3 25rem;
     column-gap: 1.5rem;
@@ -526,6 +537,8 @@ header .shopping span {
     color: #000;
 }
 
+
+/* Feedback Section Styles */
 .feedback {
     display: flex;
     align-items: center;
@@ -603,6 +616,7 @@ header .shopping span {
     color: #3d3d3d;
 }
 
+/* Banner Section Styles */
 .banner {
     background: linear-gradient(rgba(17,17,17,0.7),rgba(17,17,17,0.7)), url(../References/images/banner-bg.jpg) no-repeat;;
     background-size: cover;
@@ -634,6 +648,7 @@ header .shopping span {
     line-height: 2;
 }
 
+/* Footer Section Styles */
 .footer {
     background: #fff;
     box-shadow: rgba(17 17 17 / 15%) 0px 0.5rem 1rem;
@@ -725,6 +740,7 @@ header .shopping span {
     padding: 1.2rem 1.44rem;
 }
 
+/* Credit Section Styles */
 .credit {
     background: #242424;
     box-shadow: rgba(17 17 17 / 15%) 0px 0.5rem 1rem;
@@ -740,8 +756,9 @@ header .shopping span {
 
 
 
-/* RESPONSIVE */
+/* Media Queries */
 
+/* Styles for screens with a maximum width of 991px... */
 @media (max-width: 991px) {
     html {
         font-size: 55%;
@@ -786,6 +803,7 @@ header .shopping span {
     }
 }
 
+/* Styles for screens with a maximum width of 768px... */
 @media (max-width: 768px) {
     #menu-btn {
         display: inline-block;
@@ -823,6 +841,7 @@ header .shopping span {
     }
 }
 
+/* Styles for screens with a maximum width of 450px... */
 @media (max-width: 450px) {
     html {
         font-size: 50%;

@@ -207,6 +207,7 @@ $(document).ready(function () {
     })
 });
 
+//Clear button function
 clear.addEventListener('click', () => {
     // Delete the list cards
     listCards = [];
